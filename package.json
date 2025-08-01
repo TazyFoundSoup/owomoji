@@ -1,0 +1,27 @@
+{
+  "name": "owomoji",
+  "version": "1.0.0",
+  "description": "The one-liner emoji engine that just works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "terser src/classy.owomoji.js -o dist/classy.owomoji.min.js --verbose && terser src/flash.owomoji.js -o dist/flash.owomoji.min.js --verbose",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tazyfoundsoup/owomoji.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tazyfoundsoup/owomoji/issues"
+  },
+  "homepage": "https://github.com/tazyfoundsoup/owomoji#readme",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "terser": "^5.43.1"
+  }
+}
